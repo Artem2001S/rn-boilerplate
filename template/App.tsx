@@ -1,19 +1,24 @@
 import React from 'react';
+import {StyleSheet} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
+import {Provider} from 'react-redux';
 
 import RootNavigation from './src/navigation/RootNavigation';
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import {StyleSheet} from 'react-native';
+
+import {store} from '@/store';
 
 function App() {
   return (
     <GestureHandlerRootView style={styles.app}>
-      <NavigationContainer>
-        <SafeAreaProvider>
-          <RootNavigation />
-        </SafeAreaProvider>
-      </NavigationContainer>
+      <Provider store={store}>
+        <NavigationContainer>
+          <SafeAreaProvider>
+            <RootNavigation />
+          </SafeAreaProvider>
+        </NavigationContainer>
+      </Provider>
     </GestureHandlerRootView>
   );
 }
