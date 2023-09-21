@@ -1,6 +1,8 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
 
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
 /**
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
@@ -74,6 +76,25 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     namespace "com.boilerplate"
+
+    flavorDimensions "default"
+
+    productFlavors {
+        development {
+            dimension "default"
+            applicationId "com.boilerplate.dev"  // todo: change
+            resValue "string", "build_config_package", "com.boilerplate" // todo: change
+            resValue "string", "app_name", "Boilerplate app dev" // todo: change
+        }
+
+        production {
+            dimension "default"
+            applicationId "com.boilerplate.prod" // todo: change
+            resValue "string", "build_config_package", "com.boilerplate" // todo: change
+            resValue "string", "app_name", "Boilerplate app prod" // todo: change
+        }
+    }
+
     defaultConfig {
         applicationId "com.boilerplate"
         minSdkVersion rootProject.ext.minSdkVersion
