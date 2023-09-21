@@ -1,0 +1,8 @@
+{
+  "name": "rntemplate",
+  "version": "0.0.1",
+  "description": "React Native Template",
+  "repository": "https://git.snpdev.ru/saltpepper/react-native-template.git",
+  "author": "Artem Kazaryan",
+  "license": "MIT"
+}
