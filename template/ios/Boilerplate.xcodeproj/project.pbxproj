@@ -24,6 +24,10 @@
 		E28642302ABC601400F6BDFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		E28642342ABC601400F6BDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		E28642352ABC601400F6BDFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		E28642592ABC793200F6BDFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E28642582ABC793200F6BDFF /* GoogleService-Info.plist */; };
+		E286425A2ABC793200F6BDFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E28642582ABC793200F6BDFF /* GoogleService-Info.plist */; };
+		E286425C2ABC794100F6BDFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E286425B2ABC794100F6BDFF /* GoogleService-Info.plist */; };
+		E286425D2ABC794100F6BDFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E286425B2ABC794100F6BDFF /* GoogleService-Info.plist */; };
 		EE357E50FA7D5F4E2DD12F58 /* libPods-BoilerplateProd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1487DA2E4B2C00E268556B3 /* libPods-BoilerplateProd.a */; };
 		F0369DB63162BA19C5E8CEB2 /* libPods-BoilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 822DA9B2D47AA3F91286ACDD /* libPods-BoilerplateTests.a */; };
 /* End PBXBuildFile section */
@@ -66,6 +70,8 @@
 		E286422A2ABC600600F6BDFF /* DevInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = DevInfo.plist; path = "/Users/artemkazaryan/Desktop/snp/react-native-boilerplate-new/template/ios/DevInfo.plist"; sourceTree = "<absolute>"; };
 		E286423C2ABC601400F6BDFF /* BoilerplateProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoilerplateProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E286423D2ABC601500F6BDFF /* ProdInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ProdInfo.plist; path = "/Users/artemkazaryan/Desktop/snp/react-native-boilerplate-new/template/ios/ProdInfo.plist"; sourceTree = "<absolute>"; };
+		E28642582ABC793200F6BDFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E286425B2ABC794100F6BDFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F2EE5D2F553F57DE8AE17187 /* Pods-BoilerplateProd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerplateProd.release.xcconfig"; path = "Target Support Files/Pods-BoilerplateProd/Pods-BoilerplateProd.release.xcconfig"; sourceTree = "<group>"; };
 		FB134B326629FF08A3D284D3 /* Pods-BoilerplateDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerplateDev.debug.xcconfig"; path = "Target Support Files/Pods-BoilerplateDev/Pods-BoilerplateDev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 		13B07FAE1A68108700A75B9A /* Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				E28642552ABC78F100F6BDFF /* GoogleServices */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -217,6 +224,31 @@
 				4D8E1A38CDC04FDBAD2C1E15 /* Pods-BoilerplateTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E28642552ABC78F100F6BDFF /* GoogleServices */ = {
+			isa = PBXGroup;
+			children = (
+				E28642572ABC792100F6BDFF /* Production */,
+				E28642562ABC791600F6BDFF /* Development */,
+			);
+			path = GoogleServices;
+			sourceTree = "<group>";
+		};
+		E28642562ABC791600F6BDFF /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				E286425B2ABC794100F6BDFF /* GoogleService-Info.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		E28642572ABC792100F6BDFF /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				E28642582ABC793200F6BDFF /* GoogleService-Info.plist */,
+			);
+			path = Production;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +393,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				E28642592ABC793200F6BDFF /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E286425C2ABC794100F6BDFF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E28642212ABC600600F6BDFF /* LaunchScreen.storyboard in Resources */,
+				E286425D2ABC794100F6BDFF /* GoogleService-Info.plist in Resources */,
 				E28642222ABC600600F6BDFF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E28642342ABC601400F6BDFF /* LaunchScreen.storyboard in Resources */,
+				E286425A2ABC793200F6BDFF /* GoogleService-Info.plist in Resources */,
 				E28642352ABC601400F6BDFF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

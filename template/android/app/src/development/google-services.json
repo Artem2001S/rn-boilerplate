@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1025732561044",
+    "project_id": "boilerplate-project-32f75",
+    "storage_bucket": "boilerplate-project-32f75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025732561044:android:ff620da6f477e7fa250c81",
+        "android_client_info": {
+          "package_name": "com.boilerplate.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoBZbFenX5OW8FksdDwvJnWj3QCQOu0gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025732561044:android:4ca33b04158675c3250c81",
+        "android_client_info": {
+          "package_name": "com.boilerplate.prod"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoBZbFenX5OW8FksdDwvJnWj3QCQOu0gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

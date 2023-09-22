@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import env from 'react-native-config';
+import firebase from '@react-native-firebase/app';
 
 import {
   RootRoutes,
@@ -13,6 +14,9 @@ const MainScreen: React.FC<
   return (
     <View>
       <Text style={{color: 'black'}}>{JSON.stringify(env)}</Text>
+      <Text style={{color: 'black'}}>
+        {JSON.stringify(firebase.app().options)}
+      </Text>
     </View>
   );
 };
